@@ -110,7 +110,8 @@ h1 {
 <script>
     function date() {
 var today = new Date();
-document.getElementById('date').innerHTML = today.toDateString();
+        let dataFormatada = ((today.getDate() )) + "/" + ((today.getMonth() + 1)) + "/" + today.getFullYear();
+document.getElementById('date').innerHTML = dataFormatada.toDateString();
 }
 
 
